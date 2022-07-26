@@ -1,0 +1,259 @@
+@import 'fonts.css';
+:root {
+    --f700: 'Montserrat-Bold';
+    --f400: 'Montserrat-Regular';
+    --ps400: 'Product-Sans-Regular';
+    --dark: #282929;
+    --yellow: #d3a90b;
+}
+
+body {
+    background: var(--dark);
+}
+
+.logo {
+    border: 1px solid transparent;
+    border-image: 1 linear-gradient(133deg, #ffffff 35%, #ffcb02 65%);
+    font-size: 26px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 7px 15px;
+    transition: 0.5s ease;
+    font-family: var(--ps400);
+}
+
+.logo:hover {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.logo__text {
+    color: var(--yellow);
+    font-size: 26px;
+}
+
+.header__nav-link {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: var(--ps400);
+    margin-left: 55px;
+    transition: 0.5s ease;
+}
+
+.header__nav-link:hover {
+    text-decoration: none;
+    color: var(--yellow);
+}
+
+.header_text {
+    background: url(../images/header_img_bg.jpg) no-repeat center center / cover;
+    height: 100vh;
+}
+
+.header__text-title {
+    font-size: 60px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.header__text-end {
+    font-size: 22px;
+    color: #ffffff;
+    margin-top:25px;
+}
+
+.header-section-icon i  {
+    font-size: 30px;
+    margin: 5px;
+    color: var(--yellow);
+}
+
+.my__name {
+    color: var(--yellow);
+}
+
+
+/* -----------------main History */
+
+.main__info {
+    padding: 60px 0;
+}
+
+.main__info-title {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: var(--yellow);
+}
+
+.main__info-title::before,
+.main__info-title::after {
+    content: '';
+    display: block;
+    width: 52px;
+    height: 2px;
+    background: #ffffff;
+    margin: 0 0 10px auto;
+}
+
+.main__info-title::after {
+    margin: 10px 0 0 0;
+}
+
+.main__info-end {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.main__slider-h2 {
+    font-size: 24px;
+    color: var(--yellow);
+    font-family: var(--ps400);
+    text-transform: uppercase;
+}
+
+.main__slider-span {
+    color: #ffffff;
+}
+
+.main__slider-p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.main__slider-images-i {
+    width: 100%;
+}
+
+.main__slider-a {
+    font-size: 45px;
+    color: var(--yellow);
+    transform: 0.5s;
+}
+
+.main__slider-a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main__work {
+    padding-top: 60px;
+}
+
+.main__slider-h1 {
+    font-size: 24px;
+    color: var(--yellow);
+    font-family: var(--ps400);
+}
+
+.main__slider-span {
+    font-size: 24px;
+    color: white;
+    font-family: var(--ps400);
+}
+
+.main__tabs-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.main__tabs-text {
+    background: #1f2020;
+    border-radius: 10px;
+}
+
+.main__tabs-text_title {
+    font-size: 24px;
+    color: var(--yellow);
+    font-family: var(--ps400);
+    padding: 25px 18px 0 25px;
+    text-transform: uppercase;
+}
+
+.main__tabs-text-p {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: var(--f400);
+    padding: 25px 0 10px 10px;
+    padding-bottom: 100px;
+}
+
+.main__tabs-a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #ffffff;
+    background: var(--yellow);
+    border-radius: 10px;
+    padding: 16px 43px;
+    margin-left: 10px;
+    font-family: var(--f700);
+    text-transform: uppercase;
+}
+
+.main__tabs-a:hover {
+    text-decoration: none;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.nav-pills .nav-link {
+    border-radius: 50px;
+    background: #ffffff;
+    color: #1f2020;
+    font-size: 16px;
+    font-family: var(--f400);
+    text-transform: uppercase;
+}
+
+.main_ac_title {
+    text-align: center;
+}
+
+.accardion {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #1f2020;
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    transition: 0.5s ease-out;
+}
+
+.card-header:hover {
+    background-color: var(--yellow);
+}
+
+.accordion>.card {
+    border: 2px solid var(--yellow);
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    transition: 0.5s ease-out;
+}
+
+.btn-link:hover {
+    color: #1f2020;
+    text-decoration: none;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+    background: #1f2020;
+    color: #ffffff;
+}
